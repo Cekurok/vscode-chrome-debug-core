@@ -1,13 +1,14 @@
 parameters:
   name: ''
-  queue: ''
+  queueName: ''
 
 phases:
 - phase: ${{ parameters.name }}
-  queue: ${{ parameters.queue }}
-  demands:
-   - npm
-   - node.js
+  queue:
+    name: ${{ parameters.queueName }}
+    demands:
+    - npm
+    - node.js
   steps:
   - task: Npm@1
     displayName: npm install
