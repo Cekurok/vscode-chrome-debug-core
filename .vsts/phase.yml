@@ -32,15 +32,3 @@ phases:
     displayName: gulp tslint
     inputs:
       targets: tslint
-
-  - task: ArchiveFiles@2
-    displayName: Archive files
-    inputs:
-      includeRootFolder: false
-
-  - task: PublishBuildArtifacts@1
-    displayName: 'Publish Artifacts: drop'
-    inputs:
-      PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-      ArtifactName: drop
-      publishLocation: Container
