@@ -38,7 +38,7 @@ phases:
       includeRootFolder: false
 
   - task: PublishBuildArtifacts@1
-    displayName: Publish Artifacts: drop
+    displayName: 'Publish Artifacts: drop'
     inputs:
       PathtoPublish: '$(Build.ArtifactStagingDirectory)'
       ArtifactName: drop
