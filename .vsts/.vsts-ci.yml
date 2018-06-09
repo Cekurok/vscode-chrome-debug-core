@@ -1,0 +1,15 @@
+phases:
+- template: phase.yml
+  parameters:
+    name: macOS
+    queue: Hosted macOS Preview
+
+- template: phase.yml
+  parameters:
+    name: Linux
+    queue: Hosted Linux Preview
+
+- template: phase.yml
+  parameters:
+    name: Windows
+    queue: Hosted VS2017
